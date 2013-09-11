@@ -1,5 +1,5 @@
 {
-	"name": "sktzoootech/multi-server-sync",
+	"name": "silverstripe/multi-server-sync",
 	"description": "Multi server image upload.  Prototype for a client.",
 	"keywords": ["silverstripe", "multi-server-sync", "curl"],
 	"licese": "BSD-3-Clause",
@@ -10,7 +10,7 @@
 	}
 	],
 	"extra":{
-	"installer-name": "custom-image"
+	"installer-name": "multi-server-sync"
 	},
 	"require":
 	{
