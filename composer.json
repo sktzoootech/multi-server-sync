@@ -1,17 +1,15 @@
 {
-	"name": "silverstripe/multi-server-sync",
+	"name": "sktzoootech/multi-server-sync",
 	"description": "Multi server image upload.  Prototype for a client.",
-	"keywords": ["silverstripe", "multi-server-sync", "curl"],
+	"type": "silverstripe-module",
 	"licese": "BSD-3-Clause",
+	"keywords": ["silverstripe", "multi-server-sync", "curl"],
 	"authors": [
-	{
-		"name": "Davis D. Dimalen",
-		"email": "davis.dimalen@gmail.com"
-	}
+		{
+			"name": "Davis D. Dimalen",
+			"email": "davis.dimalen@gmail.com"
+		}
 	],
-	"extra":{
-	"installer-name": "multi-server-sync"
-	},
 	"require":
 	{
 		"silverstripe/framework": "3.*",
