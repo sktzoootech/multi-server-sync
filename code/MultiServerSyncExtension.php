@@ -7,21 +7,23 @@
  * To change this template use File | Settings | File Templates.
  */
 
-class MultiServerSyncExtension extends DataExtension{
-	public function onBeforeWrite(){
-		parent::onBeforeWrite();
-	}
+class MultiServerSyncExtension extends DataExtension
+{
+    public function onBeforeWrite()
+    {
+        parent::onBeforeWrite();
+    }
 
-	public function onAfterWrite(){
-		parent::onAfterWrite();
+    public function onAfterWrite()
+    {
+        parent::onAfterWrite();
 
-		$fileName = $this->owner->Filename;
+        $fileName = $this->owner->Filename;
 
-		$fileSenderOBJ = new MultiServerSync_Controller();
+        $fileSenderOBJ = new MultiServerSync_Controller();
 
-		foreach($fileSenderOBJ->getServerIPHost() as $keyIP){
-			$fileSenderOBJ->FileSender("../".$fileName, $keyIP['IP'], $keyIP['HOST']);
-		}
-
-	}
+        foreach ($fileSenderOBJ->getServerIPHost() as $keyIP) {
+            $fileSenderOBJ->FileSender("../".$fileName, $keyIP['IP'], $keyIP['HOST']);
+        }
+    }
 }
